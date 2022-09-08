@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { BsDot } from 'react-icons/bs';
 import Configuration from './Configuration';
 
-const HubCopyTwo = () => {
+const HubConfig = () => {
   return (
     <Container>
         <Content>
@@ -17,7 +17,7 @@ const HubCopyTwo = () => {
   )
 }
 
-export default HubCopyTwo
+export default HubConfig
 
 const Container =  styled.div `
     padding: 0;
@@ -52,6 +52,9 @@ const Content = styled.div `
         margin-bottom: 2rem;
         display: flex;
     }
+    @media screen and ( max-width: 1050px ) {
+        width: 100%;
+      }
 `
 
 
@@ -64,4 +67,7 @@ const Retangle = styled.div `
     display: flex;
     align-items: center;
     justify-content: center;
+    @media screen and ( max-width: 1050px ) {
+        width: 100%;
+      }
 `

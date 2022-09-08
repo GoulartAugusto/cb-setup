@@ -20,8 +20,6 @@ const GetStarted = () => {
   )
 }
 
-// After click or not in upgrade that will 'display: none' when clicked
-// Make the button "Start" advance for the next page
 
 export default GetStarted
 
@@ -39,6 +37,9 @@ const Content = styled.main `
         display: flex;
         flex-direction: column;
         justify-content: center;
+        @media screen and ( max-width: 1050px ) {
+        width: 100%;
+      }
     }
     & img {
         margin-bottom: 30px;
@@ -67,6 +68,7 @@ const Content = styled.main `
     & button:hover {
         cursor: pointer;
     }
+    
 `
 
 const Start = styled.button `

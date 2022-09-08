@@ -2,12 +2,12 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from './components/Header';
-import HeaderTwo from './components/HeaderTwo';
+import HeaderLogin from './components/login/HeaderLogin';
 import Hub from './components/Hub';
-import HubTwo from './components/HubTwo';
-import HubCopy from './components/Hub copy';
-import HubCopyTwo from './components/HubcopyTwo';
-import HeaderConfig from './components/HeaderConfig';
+import HubLogin from './components/login/HubLogin';
+import HubBilling from './components/billing/HubBilling';
+import HubConfig from './components/configuration/HubConfig';
+import HeaderConfig from './components/configuration/HeaderConfig';
 
 function App() {
 
@@ -16,9 +16,9 @@ function App() {
       <Router>
         <Routes>
           <Route exact path='/' element={<><Header /><Hub /></>} />
-          <Route exact path='/login' element={<><HeaderTwo /><HubTwo /></>} />
-          <Route exact path='/billing' element={<><Header /><HubCopy /></>} />
-          <Route exact path='/configuration' element={<><HeaderConfig /><HubCopyTwo /></>} />
+          <Route exact path='/login' element={<><HeaderLogin /><HubLogin /></>} />
+          <Route exact path='/billing' element={<><Header /><HubBilling /></>} />
+          <Route exact path='/configuration' element={<><HeaderConfig /><HubConfig /></>} />
         </Routes>
       </Router>
     </div>

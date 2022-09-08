@@ -41,6 +41,10 @@ const Container = styled.div `
       line-height: 30px;
       text-align: center;
       letter-spacing: 0.26px;
+
+      @media screen and ( max-width: 490px ) {
+      width: 320px;
+    }
     }
 `
 

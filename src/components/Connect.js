@@ -50,6 +50,9 @@ const Content = styled.main `
         display: flex;
         flex-direction: column;
         justify-content: center;
+        @media screen and ( max-width: 1050px ) {
+        width: 100%;
+      }
     }
     & input {
         border: none;

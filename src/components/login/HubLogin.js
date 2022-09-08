@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import ModalAlert from './ModalAlert';
-import GetStarted from './GetStarted';
+import ModalAlert from '../ModalAlert';
+import GetStarted from '../GetStarted';
 import { BsDot } from 'react-icons/bs'
 
-const HubTwo = () => {
+const HubLogin = () => {
   return (
     <All>
         <ModalAlert />
@@ -21,7 +21,7 @@ const HubTwo = () => {
   )
 }
 
-export default HubTwo
+export default HubLogin
 
 const All = styled.div `
     display: flex;
@@ -29,16 +29,15 @@ const All = styled.div `
     flex-direction: column;
     align-items: center;
     background: #F2F2F2;
+    width: 100%;
 `
 
 const Container =  styled.div `
-    padding: 0;
     border-radius: 10px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 30px;
+    background: #F2F2F2;
 `
 
 const Content = styled.div `
@@ -64,6 +63,9 @@ const Content = styled.div `
         margin-bottom: 2rem;
         display: flex;
     }
+    @media screen and ( max-width: 1050px ) {
+        width: 100%;
+      }
 `
 
 
@@ -76,4 +78,7 @@ const Retangle = styled.div `
     display: flex;
     align-items: center;
     justify-content: center;
+    @media screen and ( max-width: 1050px ) {
+        width: 100%;
+      }
 `

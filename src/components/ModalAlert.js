@@ -51,6 +51,12 @@ const Modal = styled.div `
   & button:hover {
         cursor: pointer;
     }
+    @media screen and ( max-width: 1050px ) {
+        width: calc(100% - 20%);
+        & img {
+          display: none;
+        }
+      }
 `
 
 const Upgrade = styled.button `
@@ -67,6 +73,18 @@ const Upgrade = styled.button `
 
 const Text = styled.div `
   background: transparent;
+  @media screen and ( max-width: 1050px ) {
+        width: 280px;
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+        & h5 {
+          margin-left: 10px;
+        }
+        & p {
+          margin-left: 10px;
+        }
+      }
 `
 
 

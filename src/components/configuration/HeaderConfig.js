@@ -9,18 +9,18 @@ import { TiSpanner } from 'react-icons/ti';
 const HeaderConfig = () => {
   return (
     <Container>
-    <Heading>Header</Heading>
-    <Content>
-        <h4>Client Billing</h4>
-        <h4>Docs&nbsp;<a href='#' style={{ textDecoration: 'none', color: 'black'}}><BiLinkExternal /></a></h4>
-    </Content>
+      <Heading>Header</Heading>
+      <Content>
+          <h4>Client Billing</h4>
+          <h4>Docs&nbsp;<a href='#' style={{ textDecoration: 'none', color: 'black'}}><BiLinkExternal /></a></h4>
+      </Content>
     <Nav>
-      <ul>
-        <li>Overview</li>
-        <li><HiUserGroup style={{ marginRight: "5px" }}/>Clients</li>
-        <li><ImBook style={{ marginRight: "5px" }}/> Products &amp; Services</li>
-        <li><TbFileInvoice style={{ marginRight: "5px" }}/>Invoices</li>
-      </ul>
+        <ul>
+            <li>Overview</li>
+            <li><HiUserGroup style={{ marginRight: "5px" }}/>Clients</li>
+            <li><ImBook style={{ marginRight: "5px" }}/> Products &amp; Services</li>
+            <li><TbFileInvoice style={{ marginRight: "5px" }}/>Invoices</li>
+        </ul>
       <button><TiSpanner style={{ marginRight: "5px", background: 'transparent', width: '16px', height: '16px' }} />Configure</button>
     </Nav>
     </Container>
@@ -35,12 +35,19 @@ const Container = styled.div `
     justify-content: center;
     align-self: center;
     background: #F2F2F2;
+    width: 100%;
+    @media screen and ( max-width: 1050px ) {
+      width: 100vw;
+    }
 `
 
 const Heading = styled.div `
     background: #1A1A1A;
     height: 2rem;
     width: 100vw;
+    @media screen and ( max-width: 1050px ) {
+      width: 100%;
+    }
 `
 const Content = styled.div `
     display: flex;
@@ -58,6 +65,11 @@ const Content = styled.div `
     margin-top: 3rem;
     border-bottom: 1px solid #E6E6E6;
     padding-bottom: 1rem;
+    @media screen and ( max-width: 1050px ) {
+      justify-content: space-between;
+      gap: calc(500px - 30vw);
+      width: 100vw;
+    }
 `
 const Nav = styled.nav `
     display: flex;
@@ -95,5 +107,13 @@ const Nav = styled.nav `
       line-height: 30px;
       width: 101px;
       height: 30px;
+    }
+    @media screen and ( max-width: 1050px ) {
+      justify-content: space-between;
+      gap: 10px;
+      width: 100%;
+    }
+    @media screen and ( max-width: 490px ) {
+    display: none;
     }
 `

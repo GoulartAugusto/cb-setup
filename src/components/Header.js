@@ -4,13 +4,15 @@ import styled from 'styled-components'
 
 const Header = () => {
   return (
-    <Container>
+    <>
       <Heading></Heading>
-      <Content>
-          <h4>Client Billing</h4>
-          <h4>Docs&nbsp;<a href='#' style={{ textDecoration: 'none', color: 'black', background: '#F2F2F2'}}><BiLinkExternal /></a></h4>
-      </Content>
-    </Container>
+      <Container>
+          <Content>
+              <h4>Client Billing</h4>
+              <h4>Docs&nbsp;<a href='#' style={{ textDecoration: 'none', color: 'black', background: '#F2F2F2'}}><BiLinkExternal /></a></h4>
+          </Content>
+      </Container>
+    </>
   )
 }
 
@@ -28,6 +30,7 @@ const Container = styled.div `
     justify-content: center;
     align-self: center;
     background: #F2F2F2;
+    width: 100vw;
 `
 
 
@@ -48,5 +51,10 @@ const Content = styled.div `
     background-color: #F2F2F2;
     & h4, a {
     background-color: #F2F2F2;
+  }
+    @media screen and ( max-width: 1050px ) {
+      justify-content: space-between;
+      gap: calc(500px - 30vw);
     }
+  
 `

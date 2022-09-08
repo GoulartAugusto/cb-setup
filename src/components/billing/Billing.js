@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { IoIosAlert } from "react-icons/io";
 import { Link } from 'react-router-dom';
-import CurrencySelect from './CurrencySelect';
+import CurrencySelect from '../CurrencySelect';
 
 
 
@@ -29,7 +29,19 @@ const Billing = () => {
                 <h1>Choose Billing Currency</h1>
                 <p style={{ marginBottom: "30px"}}>Select the currency you want to use to bill your clients.</p>
               <Alert>
-                  <p><IoIosAlert style={{color: "#FFAC14", height: "15px", width: "16px", backgroundColor: "#FCF4E6", alignSelf: "flex-start", marginTop: "3px", marginRight: "5px"}} className="icon" />Note: Billing currency cannot be changed in the future. Please make sure you select the correct currency.</p>
+                  <p>
+                    <IoIosAlert style={{
+                      color: "#FFAC14", 
+                      height: "15px", 
+                      width: "16px", 
+                      backgroundColor: "#FCF4E6", 
+                      alignSelf: "flex-start", 
+                      marginTop: "3px", 
+                      marginRight: "5px"}} 
+                      className="icon" 
+                      />
+                    Note: Billing currency cannot be changed in the future. Please make sure you select the correct currency.
+                  </p>
               </Alert>
                 <CurrencySelect />
           </Info>
@@ -129,8 +141,10 @@ const Alert = styled.div `
       line-height: 22px;
       max-width: 539px;
       max-height: 44px;
-
     }
+    @media screen and ( max-width: 1050px ) {
+        width: 100%;
+      }
 `
 
 const Button = styled.button `
