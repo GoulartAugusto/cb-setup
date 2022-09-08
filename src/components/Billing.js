@@ -34,7 +34,7 @@ const Billing = () => {
                 <CurrencySelect />
           </Info>
             <Confirm>
-              <input type={'checkbox'} onClick={onCheckboxClick} />
+              <input type={'checkbox'} onClick={onCheckboxClick}  />
               <h5>I am aware that I cannot change currency later</h5>
             </Confirm>
             <Link to="/configuration" style={{ textDecoration: 'none'}}><Button type="submit" disabled={isDisabled}>Finish Setup</Button></Link>
@@ -157,7 +157,7 @@ const Button = styled.button `
 `
 const Confirm = styled.div `
     display: flex;
-    background-color: transparent;
+    background: transparent;
     h5 {
         background: transparent;
         margin-left: 10px;

@@ -21,12 +21,11 @@ const Hub = () => {
 export default Hub
 
 const Container =  styled.div `
-    padding: 0;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    background: #F2F2F2;
 `
 
 const Content = styled.div `

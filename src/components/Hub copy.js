@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Connect from './Connect';
-import { BsDot } from 'react-icons/bs';
+import { BsDot, BsCheckLg } from 'react-icons/bs';
 import Billing from './Billing';
 
 const HubCopy = () => {
@@ -14,6 +14,10 @@ const HubCopy = () => {
                 <Billing />
             </Retangle>
         </Content>
+        <Successfully>
+            <BsCheckLg style={{ color: "#18BB4B", height: "30px", width: "30px", marginRight: "13px", background: "#E6E6E6" }}/>
+            <h3>Stripe account connected successfully!<p>A SECOND AGO</p></h3>
+        </Successfully>
     </Container>
   )
 }
@@ -26,7 +30,8 @@ const Container =  styled.div `
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    width: 100vw;
+    background: #F2F2F2;
 `
 
 const Content = styled.div `
@@ -64,4 +69,31 @@ const Retangle = styled.div `
     display: flex;
     align-items: center;
     justify-content: center;
+`
+
+const Successfully = styled.div `
+    background: #E6E6E6;
+    width: 300px;
+    height: 80px;
+    border-radius: 4px;
+    position: absolute;
+    left: 30px;
+    top: 782px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+    & h3 {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 20px;
+        width: 215px;
+        height: 57px;
+        background: #E6E6E6;
+    }
+    & p {
+        font-size: 9px;
+        background: #E6E6E6;
+    }
 `

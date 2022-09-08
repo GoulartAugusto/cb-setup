@@ -7,7 +7,6 @@ import { BsDot } from 'react-icons/bs'
 const HubTwo = () => {
   return (
     <All>
-        <BaseLine></BaseLine>
         <ModalAlert />
     <Container>
         <Content>
@@ -29,6 +28,7 @@ const All = styled.div `
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    background: #F2F2F2;
 `
 
 const Container =  styled.div `
@@ -38,7 +38,6 @@ const Container =  styled.div `
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
     padding-top: 30px;
 `
 
@@ -77,13 +76,4 @@ const Retangle = styled.div `
     display: flex;
     align-items: center;
     justify-content: center;
-`
-
-
-const BaseLine = styled.div `
-    width: 1050px;
-    height: 1px;
-    background: #E6E6E6;
-    margin-top: 22px;
-    margin-bottom: 22px;
 `

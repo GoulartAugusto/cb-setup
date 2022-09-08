@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Connect from './Connect';
 import { BsDot } from 'react-icons/bs';
-import Billing from './Billing';
 import Configuration from './Configuration';
 
 const HubCopyTwo = () => {
@@ -27,7 +25,8 @@ const Container =  styled.div `
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    width: 100vw;
+    background: #F2F2F2;
 `
 
 const Content = styled.div `
@@ -57,7 +56,7 @@ const Content = styled.div `
 
 
 const Retangle = styled.div `
-    background: #F9F9F9;
+    background: #ffffff;
     width: 990px;
     height: 556px;
     margin-bottom: auto;

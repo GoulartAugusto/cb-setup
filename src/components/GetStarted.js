@@ -28,7 +28,7 @@ export default GetStarted
 const Content = styled.main `
     display: flex;
     flex-direction: column;
-    background: transparent;
+    background: #F2F2F2;
     align-items: center;
     & form {
         background: #ffffff;

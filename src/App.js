@@ -7,6 +7,7 @@ import Hub from './components/Hub';
 import HubTwo from './components/HubTwo';
 import HubCopy from './components/Hub copy';
 import HubCopyTwo from './components/HubcopyTwo';
+import HeaderConfig from './components/HeaderConfig';
 
 function App() {
 
@@ -17,7 +18,7 @@ function App() {
           <Route exact path='/' element={<><Header /><Hub /></>} />
           <Route exact path='/login' element={<><HeaderTwo /><HubTwo /></>} />
           <Route exact path='/billing' element={<><Header /><HubCopy /></>} />
-          <Route exact path='/configuration' element={<><Header /><HubCopyTwo /></>} />
+          <Route exact path='/configuration' element={<><HeaderConfig /><HubCopyTwo /></>} />
         </Routes>
       </Router>
     </div>
