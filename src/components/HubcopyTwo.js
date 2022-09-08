@@ -1,24 +1,25 @@
 import React from 'react';
 import styled from 'styled-components';
 import Connect from './Connect';
-import { BsDot } from 'react-icons/bs'
-import CurrencySelect from './CurrencySelect';
+import { BsDot } from 'react-icons/bs';
+import Billing from './Billing';
+import Configuration from './Configuration';
 
-const Hub = () => {
+const HubCopyTwo = () => {
   return (
     <Container>
         <Content>
             <h5>Getting Started</h5>
-            <h5>Step 1 of 2 <BsDot style={{ background: 'transparent', fontSize: '18px' }} /> <BsDot style={{ background: 'transparent', fontSize: '18px', color: '#AAAAAA' }} /></h5>
+            <h5>Step 2 of 2 <BsDot style={{ background: 'transparent', fontSize: '18px', color: '#AAAAAA'  }} /> <BsDot style={{ background: 'transparent', fontSize: '18px'}} /></h5>
             <Retangle>
-                <Connect />
+                <Configuration />
             </Retangle>
         </Content>
     </Container>
   )
 }
 
-export default Hub
+export default HubCopyTwo
 
 const Container =  styled.div `
     padding: 0;

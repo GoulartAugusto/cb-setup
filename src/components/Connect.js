@@ -1,26 +1,40 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom'
 import styled from 'styled-components';
 import { AiFillCheckCircle } from 'react-icons/ai';
 import Stripe from "../images/stripe.jpg";
 
+
 const Connect = () => {
+    const [email, setEmail] = useState('');
+
+
   return (
     <Content>
         <img src={Stripe} alt="stripe" style={{ width:"150px", height: "150px", borderRadius: "50%" }} />
         <h1>Connect Stripe Account</h1>
             <form>
-                <h5>name Stripe Account
+                <h5>{email} Stripe Account
                     <br />
-                    <input type='email' placeholder='email' />
+                    <input 
+                    type='email' 
+                    placeholder='email' 
+                    autoFocus 
+                    value={email}
+                    required
+                    onChange={(e) => setEmail(e.target.value)}
+                    />
                 </h5>
                 <h5>Connected &nbsp;<AiFillCheckCircle style={{ color: '#18BB4B' }} /></h5>
             </form>
-        <Continue>Continue</Continue>
+            <Link to="/login"><Continue>Continue</Continue></Link>
     </Content>
   )
 }
 
 export default Connect
+
+// Insert on "Continue" the function to go for the next page, only if an email/username are ok
 
 const Content = styled.main `
     display: flex;
@@ -64,4 +78,7 @@ const Continue = styled.button `
     border: none;
     border-radius: 4px;
     font-weight: 500;
+    :hover {
+        cursor: pointer;
+    }
 `

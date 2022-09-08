@@ -1,32 +1,45 @@
 import React from 'react';
 import styled from 'styled-components';
-import Connect from './Connect';
+import ModalAlert from './ModalAlert';
+import GetStarted from './GetStarted';
 import { BsDot } from 'react-icons/bs'
-import CurrencySelect from './CurrencySelect';
 
-const Hub = () => {
+const HubTwo = () => {
   return (
+    <All>
+        <BaseLine></BaseLine>
+        <ModalAlert />
     <Container>
         <Content>
             <h5>Getting Started</h5>
-            <h5>Step 1 of 2 <BsDot style={{ background: 'transparent', fontSize: '18px' }} /> <BsDot style={{ background: 'transparent', fontSize: '18px', color: '#AAAAAA' }} /></h5>
+            <h5>Step 1 of 2 <BsDot style={{ background: 'transparent', fontSize: '18px' }} /><BsDot style={{ background: 'transparent', fontSize: '18px', color: '#AAAAAA' }} /></h5>
             <Retangle>
-                <Connect />
+                <GetStarted />
             </Retangle>
         </Content>
     </Container>
+    </All>
   )
 }
 
-export default Hub
+export default HubTwo
+
+const All = styled.div `
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+`
 
 const Container =  styled.div `
     padding: 0;
     border-radius: 10px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
+    padding-top: 30px;
 `
 
 const Content = styled.div `
@@ -64,4 +77,13 @@ const Retangle = styled.div `
     display: flex;
     align-items: center;
     justify-content: center;
+`
+
+
+const BaseLine = styled.div `
+    width: 1050px;
+    height: 1px;
+    background: #E6E6E6;
+    margin-top: 22px;
+    margin-bottom: 22px;
 `
