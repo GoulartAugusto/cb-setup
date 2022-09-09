@@ -7,8 +7,20 @@ const HubConfig = () => {
   return (
     <Container>
         <Content>
-            <h5>Getting Started</h5>
-            <h5>Step 2 of 2 <BsDot style={{ background: 'transparent', fontSize: '18px', color: '#AAAAAA'  }} /> <BsDot style={{ background: 'transparent', fontSize: '18px'}} /></h5>
+                <h5>Getting Started</h5>
+                <h5>Step 2 of 2 
+                    <BsDot style={{ 
+                    background: 'transparent', 
+                    fontSize: '18px', 
+                    color: '#AAAAAA'  
+                    }} 
+                    /> 
+                    <BsDot style={{ 
+                        background: 'transparent', 
+                        fontSize: '18px'
+                        }} 
+                    />
+                </h5>
             <Retangle>
                 <Configuration />
             </Retangle>

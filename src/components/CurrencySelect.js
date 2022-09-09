@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 
@@ -166,7 +166,7 @@ const CurrencySelect = () => {
     return (
           <Select>
             {options.map((option) => (
-              <option value={option.name}>{option.code + " " +"-" + " " + option.name}</option>
+              <option value={option.name}>{option.code + " " + "-" + " " + option.name}</option>
             ))}
           </Select>
     );

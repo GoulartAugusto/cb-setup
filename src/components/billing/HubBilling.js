@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import Connect from '../Connect';
 import { BsDot, BsCheckLg } from 'react-icons/bs';
 import Billing from './Billing';
 

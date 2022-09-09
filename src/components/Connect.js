@@ -34,7 +34,6 @@ const Connect = () => {
 
 export default Connect
 
-// Insert on "Continue" the function to go for the next page, only if an email/username are ok
 
 const Content = styled.main `
     display: flex;

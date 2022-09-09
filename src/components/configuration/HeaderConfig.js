@@ -84,6 +84,7 @@ const Nav = styled.nav `
     margin-bottom: 35px;
     margin-right: 2rem;
     margin-bottom: 3rem;
+    margin-left: 3rem;
     & ul {
       display: flex;
       align-items: center;

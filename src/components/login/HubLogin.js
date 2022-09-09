@@ -8,15 +8,26 @@ const HubLogin = () => {
   return (
     <All>
         <ModalAlert />
-    <Container>
-        <Content>
-            <h5>Getting Started</h5>
-            <h5>Step 1 of 2 <BsDot style={{ background: 'transparent', fontSize: '18px' }} /><BsDot style={{ background: 'transparent', fontSize: '18px', color: '#AAAAAA' }} /></h5>
-            <Retangle>
-                <GetStarted />
-            </Retangle>
-        </Content>
-    </Container>
+        <Container>
+            <Content>
+                <h5>Getting Started</h5>
+                <h5>Step 1 of 2 <BsDot 
+                style={{ 
+                    background: 'transparent', 
+                    fontSize: '18px' }} 
+                    />
+                    <BsDot 
+                    style={{ 
+                        background: 'transparent', 
+                        fontSize: '18px', 
+                        color: '#AAAAAA' }} 
+                        />
+                </h5>
+                <Retangle>
+                    <GetStarted />
+                </Retangle>
+            </Content>
+        </Container>
     </All>
   )
 }

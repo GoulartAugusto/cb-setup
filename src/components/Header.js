@@ -56,5 +56,4 @@ const Content = styled.div `
       justify-content: space-between;
       gap: calc(500px - 30vw);
     }
-  
 `

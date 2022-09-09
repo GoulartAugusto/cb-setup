@@ -1,19 +1,23 @@
 import React from 'react';
 import { BiLinkExternal } from 'react-icons/bi';
 import styled from 'styled-components'
-import GetStarted from '../GetStarted';
 
 const HeaderLogin = () => {
   return (
     <>
       <Heading></Heading>
-      <Container>
-          <Content>
-              <h4>Client Billing <small>–  A full payment solution for your business, free with "COMPANY"</small></h4>
-              <h4>Docs&nbsp;<a href='#' style={{ textDecoration: 'none', color: 'black', background: '#F2F2F2'}}><BiLinkExternal /></a></h4>
-          </Content>
-        <BaseLine></BaseLine>
-      </Container>
+        <Container>
+            <Content>
+                <h4>Client Billing <small>–  A full payment solution for your business, free with "COMPANY"</small></h4>
+                <h4>Docs&nbsp;<a href='#' 
+                  style={{ 
+                  textDecoration: 'none', 
+                  color: 'black', 
+                  background: '#F2F2F2'
+                  }}><BiLinkExternal /></a></h4>
+            </Content>
+          <BaseLine></BaseLine>
+        </Container>
     </>
   )
 }
@@ -36,7 +40,6 @@ const Container = styled.div `
     background: #F2F2F2;
     width: 100vw;
 `
-
 
 
 const Content = styled.div `

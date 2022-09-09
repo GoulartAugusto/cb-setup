@@ -4,8 +4,6 @@ import { IoIosAlert } from "react-icons/io";
 import { Link } from 'react-router-dom';
 import CurrencySelect from '../CurrencySelect';
 
-
-
 const Billing = () => {
   const [isDisabled, setIsDisabled] = useState(true);
   const [checked, setChecked] = useState(false);

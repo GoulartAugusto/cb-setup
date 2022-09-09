@@ -24,7 +24,6 @@ const ModalAlert = () => {
 
 export default ModalAlert
 
-// Have to make a function to "display: none" onClick of "upgrade" button
 
 const Modal = styled.div `
   width: 1050px;
@@ -86,5 +85,3 @@ const Text = styled.div `
         }
       }
 `
-
-
